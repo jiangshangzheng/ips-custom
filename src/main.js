@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ViewTemplate from './components/common/ViewTemplate.vue'
+import ViewContainer from './components/common/ViewContainer.vue'
 
-Vue.component('view-template', ViewTemplate)
+Vue.component('view-container', ViewContainer)
 
 Vue.config.productionTip = false
 
@@ -12,5 +12,7 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: {
+    App
+  }
 })

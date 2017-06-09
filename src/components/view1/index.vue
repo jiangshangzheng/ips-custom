@@ -1,6 +1,6 @@
 <template>
-  <view-template class="view1" viewId="view1" :left="20" :top="20" >
-  </view-template>
+  <view-container class="view1" :attr="attr">
+  </view-container>
 </template>
 
 <script>
@@ -8,12 +8,19 @@
     name: 'View1',
     data () {
       return {
-        viewId: 'viewId'
+        attr: {
+          x: 500,
+          y: 400,
+          w: 400,
+          h: 300
+        }
       }
     }
   }
 </script>
 
 <style scoped>
-  
+  .view1 {
+    border: 3px solid cyan;
+  }
 </style>
