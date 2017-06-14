@@ -1,5 +1,5 @@
 <template>
-  <div :id="id" class="view-item" @click="abd(2)" :style="{left:defaultAttr.x +'px',top:defaultAttr.y+'px',width:defaultAttr.w+'px',height:defaultAttr.h+'px',zIndex:defaultAttr.zIndex}">
+  <div :id="id" class="view-item" :style="{left:defaultAttr.x +'px',top:defaultAttr.y+'px',width:defaultAttr.w+'px',height:defaultAttr.h+'px',zIndex:defaultAttr.zIndex}">
     <slot></slot>
   </div>
 </template>
