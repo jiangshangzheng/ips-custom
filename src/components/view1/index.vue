@@ -1,7 +1,5 @@
 <template>
-  <view-container class="view1" :attr="attr">
-    <div id="view1-div1"></div>
-  </view-container>
+  <div id="view1-div1"></div>
 </template>
 
 <script>
@@ -11,12 +9,6 @@
     name: 'View1',
     data () {
       return {
-        attr: {
-          x: 100,
-          y: 100,
-          w: 400,
-          h: 300
-        },
         chart: null
       }
     },

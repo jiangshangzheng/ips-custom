@@ -1,7 +1,6 @@
 <template>
-  <view-container class="view2" :attr="attr">
-    <div id="custom-map"></div>
-  </view-container>
+  <div id="custom-map">
+  </div>
 </template>
 
 <script>
@@ -12,13 +11,7 @@
     name: 'view2',
     data () {
       return {
-        attr: {
-          x: 0,
-          y: 0,
-          w: 600,
-          h: 600,
-          map: null
-        }
+        map: null
       }
     },
     mounted () {

@@ -8,8 +8,9 @@ const route = []
 
 for (let key in components) {
   route.push({
+    name: key,
     path: '/' + key,
-    component: components[key]
+    component: components[key].component
   })
 }
 

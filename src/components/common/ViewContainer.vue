@@ -25,16 +25,26 @@
     data () {
       return {
         defaultAttr: {
-          x: 0,
-          y: 0,
+          x: 20,
+          y: 80,
           w: 600,
           h: 300,
           zIndex: 0
         }
       }
     },
-    created () {
-      this.defaultAttr = defaultsDeep(this.attr || {}, this.defaultAttr)
+    watch: {
+      attr (val) {
+        this.mergeAttr()
+      }
+    },
+    mounted () {
+      this.mergeAttr()
+    },
+    methods: {
+      mergeAttr () {
+        this.defaultAttr = defaultsDeep(this.attr || {}, this.defaultAttr)
+      }
     }
   }
 
