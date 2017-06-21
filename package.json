@@ -1,7 +1,7 @@
 {
   "name": "ips-custom",
   "version": "1.1.1",
-  "description": "A Vue.js project",
+  "description": "ips-custom Vue.js project",
   "author": "jsz",
   "private": true,
   "main": "index.js",
